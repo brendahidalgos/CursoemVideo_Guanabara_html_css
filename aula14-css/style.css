@@ -1,0 +1,15 @@
+body{
+    background-color: #53bde7;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color:#0e08ad;
+    background-color: aqua;
+}
+h2{
+    color: #ff0000;;
+}
+p{
+    text-align: justify;
+}
