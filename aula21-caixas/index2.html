@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+        header{
+            background-color: lightblue;/* cor de fundo do cabeçalho */
+            height: 100px;/* altura do cabeçalho */
+            width: 100%;/* largura do cabeçalho */
+            text-align: center;/* centraliza o texto no cabeçalho */
+        }
+        nav{
+            background-color: lightgreen;/* cor de fundo da navegação */
+            height: 50px;/* altura da navegação */
+            width: 100%;/* largura da navegação */
+            display: flex;/* usa flexbox para alinhar os links */
+            justify-content: center;/* centraliza os links horizontalmente */
+            align-items: center;/* centraliza os links verticalmente */
+            gap: 10px;/* espaço entre os links */
+            flex-wrap: wrap;/* permite que os links se movam para a próxima linha se necessário */
+            padding: 10px;/* preenchimento da navegação */
+            box-sizing: border-box;/* inclui o preenchimento e a borda no cálculo da largura total */
+            border: 2px solid darkgreen;/* borda da navegação */
+            margin-bottom: 20px;/* margem inferior da navegação */            
+        }
+        main{
+            background-color: lightgray;/* cor de fundo do corpo principal */
+            padding: 20px;/* preenchimento do corpo principal */
+        }
+        article{
+            background-color: lightyellow;/* cor de fundo do artigo */
+            padding: 20px;/* preenchimento do artigo */
+            margin: 20px;/* margem do artigo */
+            border: 2px solid black;/* borda do artigo */
+        }
+        article > aside{
+            background-color: lightgreen;/* cor de fundo do aside */
+            padding: 10px;/* preenchimento do aside */
+            margin-top: 10px;/* margem superior do aside */
+            border: 1px solid darkgreen;/* borda do aside */
+        }
+        footer{
+            background-color: lightcoral;/* cor de fundo do rodapé */
+            height: 50px;/* altura do rodapé */
+            width: 100%;/* largura do rodapé */
+            text-align: center;/* centraliza o texto no rodapé */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+        </section>
+        <section>
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod hic dolorem nobis, placeat esse dolore atque veniam soluta deleniti voluptatem? Suscipit aliquid laboriosam adipisci animi natus est dolorum sed voluptas!</p>
+                <aside>
+                    <p>Arigo escrito por Brenda</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Brenda Hidalgo</p>
+    </footer>
+</body>
+</html>
