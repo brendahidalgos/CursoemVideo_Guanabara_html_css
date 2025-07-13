@@ -20,14 +20,17 @@
             height: 50px;/* altura da navegação */
             width: 100%;/* largura da navegação */
             display: flex;/* usa flexbox para alinhar os links */
-            justify-content: center;/* centraliza os links horizontalmente */
+            text-align: center;/* centraliza o texto dos links */    
+            justify-content: center;/* centraliza os links horizontalmente */ 
             align-items: center;/* centraliza os links verticalmente */
+            flex-wrap: wrap;/* permite que os links se movam para a próxima linha se não houver espaço suficiente */
+            border-radius: 10px;/* borda arredondada da navegação */        
             gap: 10px;/* espaço entre os links */
-            flex-wrap: wrap;/* permite que os links se movam para a próxima linha se necessário */
-            padding: 10px;/* preenchimento da navegação */
-            box-sizing: border-box;/* inclui o preenchimento e a borda no cálculo da largura total */
-            border: 2px solid darkgreen;/* borda da navegação */
-            margin-bottom: 20px;/* margem inferior da navegação */            
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);/* sombra da navegação */ 
+        }
+        h1{
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.464);/* sombra do título */
+            border-radius: 30px;/* borda arredondada do título */;
         }
         main{
             background-color: lightgray;/* cor de fundo do corpo principal */
@@ -50,6 +53,13 @@
             height: 50px;/* altura do rodapé */
             width: 100%;/* largura do rodapé */
             text-align: center;/* centraliza o texto no rodapé */
+        }
+        div#bola{
+            height: 100px;/* altura da bola */
+            width: 100px;/* largura da bola */
+            margin: 10px;/* margem da bola */
+            background-color: red;/* cor de fundo da bola */
+            border-radius: 50%;/* borda arredondada da bola */
         }
     </style>
 </head>
@@ -81,5 +91,6 @@
     <footer>
         <p>Desenvolvido por Brenda Hidalgo</p>
     </footer>
+    <div id="bola"></div>
 </body>
 </html>
