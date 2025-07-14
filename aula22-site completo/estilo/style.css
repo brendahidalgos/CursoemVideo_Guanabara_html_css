@@ -25,6 +25,9 @@ body{
     background-color: var(--cor0);
     font-size: var(--fonte-padrao);
 }
+a.externo::after{
+    content: '\00A0\1F517'; /* Emoji de link externo */
+}
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -35,6 +38,7 @@ header > h1{
     color:white;
     font-family: var(--font-destaque);
     font-size: 3em;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.626);
 }
@@ -47,6 +51,7 @@ header > p{
     padding-right: 10px;
     padding-left: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    margin-bottom: 5px;
 }
 nav{
     background-color: var(--cor5);
@@ -54,7 +59,7 @@ nav{
     box-shadow: 0px 7px 7px rgba(0,0,0,0.192);
 }
 nav > a{
-    color: white;
+    color:var(--cor1);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -79,19 +84,94 @@ main{
 main h1{
     color: var(--cor5);
     font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 main h2{
     font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);/* Gradiente de cor */
+    text-indent: 8px;
+}
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;/* Indentação do primeiro parágrafo */
+    font-size: 1em;;
+    line-height: 2em;/* Altura da linha */
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;    
+    padding: 2px 6px;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;/* Sublinhado ao passar o mouse */
+    color: var(--cor4);
 }
 main img{
     width: 100%;
 }
 main img.pequena{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
+.video{
+    background-color: var(--cor5);
+    margin-top: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%; /* Para manter a proporção do vídeo */
+    position: relative;/* Necessário para o posicionamento absoluto do iframe */
+}
+div.video > iframe{
+    position: absolute;/* Necessário para o posicionamento do vídeo */
+    top: 5%;/* Necessário para o posicionamento do vídeo */
+    left: 5%;/* Necessário para o posicionamento do vídeo */
+    width: 90%;/* Largura do vídeo */
+    height: 90%;/* Altura do vídeo */
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+        box-shadow: 3px 3px 8px rgba(0,0,0,0.192);
+}
+aside ul{
+    list-style-position: inside; /* Posição da lista */
+    columns:2; /* Colunas da lista */
+    list-style-type: '\2714\00A0\00A0';/* Estilo da lista 00a0 é espaçamento*/
+}
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;/* Margem negativa para cobrir o padding do aside */
+    border-radius: 10px 10px 0px 0px;
+}
 footer{
     background-color: var(--cor5);
-    color: white;    
+    color: white;  
+    text-align: center;  
+    font-size: 0.8em;
+    padding: 5px;
+    
+}
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
 }
