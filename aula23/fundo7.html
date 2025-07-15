@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
+    <style>
+    #container{
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        position: relative;/* Permite que elementos filhos com position: absolute sejam posicionados em relação a este container */
+        height: 95vh;/* Altura do container */
+        padding: 10px;/* Espaço interno entre a borda e o conteúdo */
+        background-color: purple;/* Cor de fundo roxa */
+    }
+    #conteudo{ 
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%; /* Faz a imagem de fundo ocupar 100% da largura e altura do elemento */
+        height: 200px;/* Altura do conteúdo */
+        width: 400px;/* Largura do conteúdo */
+        background-color: yellow;/* Cor de fundo amarela */
+
+        position: absolute;/* Posiciona este elemento de forma absoluta dentro do container */
+        /*se for absoluto pode utilizar o top e left*/
+        left: 50%;
+        top: 50%;        
+        transform: translate(-50%, -50%);/* O transform: translate(-50%, -50%) move o elemento metade da sua largura para a esquerda e metade da sua altura para cima, centralizando-o perfeitamente no container */
+    }
+</style>
+    </style>
 </head>
 <body>
     <section id="container">
         <article id="conteudo">
-
+            
         </article>
     </section>
 </body>
