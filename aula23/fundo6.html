@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de Tela</title>
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: cover; /*imagem de fundo total preenchida sem distorcer*/
+            background-size: cover; (imagem de fundo total preenchida sem distorcer)
+           background-attachment: fixed; (scroll = o fundo rola junto com o conteudo, fixed = o fundo para e rola só o conteudo) */
 
+            /*Shorthand - background*/
+            /* color > image > position > repeat >  attachment*/
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -31,6 +38,9 @@
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla corporis iure! Labore ratione facere quisquam. Adipisci hic, modi architecto voluptatem sit quam quaerat maiores fugit deleniti, quos odit excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sint eaque dignissimos consequuntur soluta exercitationem odio optio obcaecati, molestiae ducimus! Consequatur ut modi laudantium voluptatem eaque atque nemo necessitatibus molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reprehenderit tenetur minima dolore autem nihil praesentium, ad, aliquam exercitationem dignissimos cum nobis ut, modi quasi et atque beatae tempore voluptate.</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla corporis iure! Labore ratione facere quisquam. Adipisci hic, modi architecto voluptatem sit quam quaerat maiores fugit deleniti, quos odit excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sint eaque dignissimos consequuntur soluta exercitationem odio optio obcaecati, molestiae ducimus! Consequatur ut modi laudantium voluptatem eaque atque nemo necessitatibus molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reprehenderit tenetur minima dolore autem nihil praesentium, ad, aliquam exercitationem dignissimos cum nobis ut, modi quasi et atque beatae tempore voluptate.</p>
            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla corporis iure! Labore ratione facere quisquam. Adipisci hic, modi architecto voluptatem sit quam quaerat maiores fugit deleniti, quos odit excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sint eaque dignissimos consequuntur soluta exercitationem odio optio obcaecati, molestiae ducimus! Consequatur ut modi laudantium voluptatem eaque atque nemo necessitatibus molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reprehenderit tenetur minima dolore autem nihil praesentium, ad, aliquam exercitationem dignissimos cum nobis ut, modi quasi et atque beatae tempore voluptate.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla corporis iure! Labore ratione facere quisquam. Adipisci hic, modi architecto voluptatem sit quam quaerat maiores fugit deleniti, quos odit excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sint eaque dignissimos consequuntur soluta exercitationem odio optio obcaecati, molestiae ducimus! Consequatur ut modi laudantium voluptatem eaque atque nemo necessitatibus molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reprehenderit tenetur minima dolore autem nihil praesentium, ad, aliquam exercitationem dignissimos cum nobis ut, modi quasi et atque beatae tempore voluptate.</p>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla corporis iure! Labore ratione facere quisquam. Adipisci hic, modi architecto voluptatem sit quam quaerat maiores fugit deleniti, quos odit excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sint eaque dignissimos consequuntur soluta exercitationem odio optio obcaecati, molestiae ducimus! Consequatur ut modi laudantium voluptatem eaque atque nemo necessitatibus molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reprehenderit tenetur minima dolore autem nihil praesentium, ad, aliquam exercitationem dignissimos cum nobis ut, modi quasi et atque beatae tempore voluptate.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla corporis iure! Labore ratione facere quisquam. Adipisci hic, modi architecto voluptatem sit quam quaerat maiores fugit deleniti, quos odit excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sint eaque dignissimos consequuntur soluta exercitationem odio optio obcaecati, molestiae ducimus! Consequatur ut modi laudantium voluptatem eaque atque nemo necessitatibus molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reprehenderit tenetur minima dolore autem nihil praesentium, ad, aliquam exercitationem dignissimos cum nobis ut, modi quasi et atque beatae tempore voluptate.</p>
     </main>
 </body>
 </html>
