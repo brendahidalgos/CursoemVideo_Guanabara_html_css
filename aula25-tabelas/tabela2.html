@@ -4,24 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+    <!--anatomia da tabela
+    table
+        caption
+        thead
+        tr, td, th
+        tbody
+        tr, td, th
+        tfoot
+        tr, td, th
+        -->
     <table>
+        <caption>População das cidades federativas</caption><!--titulo-->
         <thead><!--cabeçalho-->
             <tr>
-                <th>Estado</th>
-                <th>Popularidade</th>
+                <th>Estado</th><!--subtitulo-->
+                <th>Popularidade</th><!--subtitulo-->
             </tr>
         </thead>
         <tbody><!--corpo-->
             <tr>
-                <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td>São Paulo</td><!--dado-->
+                <td class="num">45 919 049</td><!--dado-->
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">11 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
             </tr>
         </tbody>
         <tfoot><!--rodape-->
-
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
         </tfoot>
     </table>
 </body>
