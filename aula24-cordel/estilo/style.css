@@ -9,6 +9,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 html, body{
     min-height: 100vh;
@@ -24,9 +25,12 @@ header > h1{
     padding-top: 50px;
     /*text-transform: uppercase; tudo em letra maiuscula*/
     font-variant: small-caps;/*letras maiusculas porem a primeira maior*/
+    font-family: var(--font2);
+    font-size: 2em;
 }
 header p {
     padding-bottom: 50px;
+    
 }
 a{
     color: white;
@@ -41,6 +45,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;/*espaçamento entre linhas*/
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 1em;
 }
 section.normal{
     background-color: white;
