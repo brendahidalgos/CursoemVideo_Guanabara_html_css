@@ -48,6 +48,9 @@ section{
     font-family: var(--font3);
     font-size: 1em;
 }
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -59,6 +62,12 @@ section.imagem{
 section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.347);
+}
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
 }
 footer{
     background-color: black;
