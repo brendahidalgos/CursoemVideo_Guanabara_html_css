@@ -9,3 +9,8 @@ html, body{
     width: 100vw;
     background-color: black;
 }
+main{
+    height: 100vw;
+    position: relative;
+    background-color: green;
+}
