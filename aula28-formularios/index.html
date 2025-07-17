@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php">
+        <p><label for="idnome" method="get">Nome: </label> <!--get aparece no link as informações--><!--post esconde as informações-->
+            <input type="text" name="nome" id="idnome">
+        </p>
+        <p><label for="idsobrenome">Sobrenome: </label> 
+            <input type="text" name="sobrenome" id="idsobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
 </body>
 </html>
