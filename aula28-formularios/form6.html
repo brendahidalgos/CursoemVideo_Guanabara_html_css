@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idcor">Cor</label>
+            <input type="color" name="cor" id="idcor" value="#00ff00">
+        </p>
+        <p>
+            <label for="idnivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="idnivel" min="1" max="3" value="1">
+        </p>
+        <p>
+            <label for="idfoto">Foto de Perfil</label>
+            <input type="file" name="Foto" id="idfoto"><!--use o metodo post-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
