@@ -4,6 +4,43 @@
 verde: #49a09d
 lilás; #5f2c82
 */
-html{
-    
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    background-color:#5f2c82;    
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    /*colocar no meio da tela*/
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+section#login > div#imagem{
+    background: #5f2c82 url(../imagens/predio.jpg) no-repeat;
+    height: 200px;
+    background-position: left bottom;
+    background-size: cover;
+    display: block;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;    
 }
