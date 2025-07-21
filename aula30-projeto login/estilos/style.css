@@ -26,6 +26,9 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    /*transição*/
+    transition: width .3s, height .3s; /*transição de tamanho*/
+    transition-timing-function: ease;/*suavizar animação*/
     /*colocar no meio da tela*/
     position:absolute;
     top:50%;
