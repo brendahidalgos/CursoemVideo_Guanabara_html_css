@@ -33,8 +33,8 @@ section#login{
     position:absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
+    transform: translate(-50%, -50%);/*sempre na ultima linha*/
 }
 section#login > div#imagem{
     background: #5f2c82 url(../imagens/predio.jpg) no-repeat;
@@ -56,14 +56,35 @@ div#formulario > p{
 }
 form > div.campo{
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 form label{
     display: none;
+}
+div.campo > span{
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #6cd3cf;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);/*sempre na ultima linha*/
+}
+div.campo > input:focus-within{
+    background-color: white;
 }
 form > input[type=submit]{
     display: block;
