@@ -7,16 +7,23 @@
     <style>
        div.conteiner{
             background-color: lightsalmon;
+            /*PADRÃO*/
             display: flex;/*conteiner flexivel*/
             flex-direction: row;
+            flex-wrap: nowrap;
+            /*---------*/
+            /*
+            RESUMO DA LINHA
+            flex-flow: row nowrap;
+            */
+            justify-content: flex-start;
+            align-items: flex-start;
        }
        div.item{
             background-color: lightblue;
             border: 1px solid black;
-            /*flex: auto; item automatico para ocupar todo o container*/
-            
             text-align: center;
-            padding: 10px;
+            /*flex: auto; /*item automatico para ocupar todo o container*/                  
        }
        /* DIREÇÕES
        flex-direction:row; | paisagem - da esquerda para a direita
@@ -33,17 +40,31 @@
        flex-wrap: wrap; | encolhimento dos blocos e quebra para a linha de baixo
        flex-wrap: wrap-reverse; | encolhimento dos blocos e quebra para a linha de cima
        */
+       /*ALINHAR PELO EIXO PRINCIPAL
+       justify-content:flex-start; | alinha o conteudo do main-axis
+       justify-content:flex-end;
+       justify-content: center;
+       justify-content: space-between; | alinhamento justificado
+       justify-content: space-evenly; | colocar espaçamentos iguais entre os itens e as bordas
+       justify-content: space-around; | centralizar os itens dentro de cada bloco de item 
+       */
+       /*ALINHAR PELO EIXO TRANSVERSAL
+       align-items: stretch; 
+       align-items: flex-start; 
+       align-items: flex-end;
+       align-items: center;
+       */
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
     </div>
 </body>
 </html>
