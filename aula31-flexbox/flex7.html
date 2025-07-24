@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+            display: flex;/*conteiner flexivel*/
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            /*flex: auto; /*item automatico para ocupar todo o container*/
+            text-align: center;
+            padding: 20px;
+        }     
+        div#i1{
+            order: 0; /*3*/
+        }
+        div#i2{
+            order: -2; /*2*/
+        }
+        div#i3{
+            order: 4; /*6*/
+        }
+        div#i4{
+            order: 8; /*7*/
+        }
+        div#i5{
+            order: 2; /*5*/
+        }
+        div#i6{
+            order: 0; /*4*/
+        }
+        div#i7{
+            order: -4; /*1*/
+        }
+        /*ALIGN-SELF - para cada um dos itens cross-axis no eixo transversal
+        auto | herdar a caracteristica do pai na vertical
+        flex-start | alinhamento perto do cross-start
+        flex-end | alinhamento perto do cross-end
+        center | meio
+        stretch | ocupa espaço inteiro
+        */
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
