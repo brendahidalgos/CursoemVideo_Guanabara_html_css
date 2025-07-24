@@ -19,10 +19,13 @@ main{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-/*section.coluna{
-    flex: 1 1 200px; 
-    max-width: 350px;            
-}*/
+hr{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+section{
+    width: 100%;      
+}
 button{
     background-color: gray;
     width: auto;
@@ -49,5 +52,5 @@ footer{
 }
 footer > a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 } 
