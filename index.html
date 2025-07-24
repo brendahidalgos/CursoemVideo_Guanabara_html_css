@@ -4,61 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de exercícios</title>
-    <style>       
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: lightgray;
-        }
-        header{
-            padding: 50px;  
-            background-color: gray;          
-        }
-        header > h1, p{
-            color: white;
-        }
-        main{
-            padding-left: 50px;
-            padding-right: 50px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
-        section.coluna{
-            flex: 1 1 200px; 
-            max-width: 350px;            
-        }
-        button{
-            background-color: gray;
-            width: auto;
-            height: 30px;
-            padding: 5px;
-            margin-bottom: 5px;
-            text-align: center;
-            border: none;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.184);
-        }
-        button > a{
-            text-decoration: none;
-            color: white;
-        }
-        button:hover{
-            background-color: green;
-        }
-        footer{
-            background-color: gray;
-            padding: 10px;
-            color: white;
-            text-align: center;
-        }
-        footer > a{
-            text-decoration: none;
-            color: white;
-        }        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>    
     <header>
@@ -66,8 +12,8 @@
         <p>Exercícios feitos 👇🏻</p>
     </header>
     <main style="display: flex; flex-wrap: wrap; gap: 30px;">
-        <section class="coluna">
-            <button><a href="aula1-tag html/index.html">Aula 1 - Olá, Mundo!</a></button><br>
+        <section>
+            <button><a href="aula1-tag html/index.html">Aula 1 - Olá, Mundo!</a></button>
             <button><a href="aula2-paragrafos, simbolos e emojis/index.html">Aula 2 - Parágrafos, simbolos e emojis</a></button><br>
             <button><a href="aula3-simbolos e emojis/index.html">Aula 3 - Simbolos e emojis</a></button><br>
             <button><a href="aula4-imagens/index.html">Aula 4 - Imagens</a></button><br>
@@ -77,12 +23,12 @@
              <article>
                 <button><a href="aula8-formatação de textos/index.html">Aula 8 - Formatação de textos</a></button>           
                 <button><a href="aula8-formatação de textos/index2.html">Aula 8.1 - Formatação de textos</a></button>
-                <button><a href="aula8-formatação de textos/index3.html">Aula 8.2 - Formatação de textos</a></button><br>
+                <button><a href="aula8-formatação de textos/index3.html">Aula 8.2 - Formatação de textos</a></button>
             </article>
             <button><a href="aula9-listas/index.html">Aula 9 - Listas</a></button><br>
             <article>
                 <button><a href="aula10-links/index.html">Aula 10 - Links</a></button>            
-                <button><a href="aula10-links/pag002.html">Aula 10.1 - Links</a></button><br>
+                <button><a href="aula10-links/pag002.html">Aula 10.1 - Links</a></button>
             </article>
             <button><a href="aula11-midias/index.html">Aula 11 - Mídias</a></button><br>
             <button><a href="aula12-video/index.html">Aula 12 - Video</a></button><br>
@@ -90,10 +36,8 @@
             <button><a href="aula14-css/index.html">Aula 14 - CSS</a></button><br>
              <article>
                 <button><a href="aula15-css/index.html">Aula 15 - CSS</a></button>           
-                <button><a href="aula15-css/pagina2.html">Aula 15.1 - CSS</a></button><br>
+                <button><a href="aula15-css/pagina2.html">Aula 15.1 - CSS</a></button>
             </article>
-        </section>
-        <section class="coluna">
             <article>
                 <button><a href="aula16-css cores/index.html">Aula 16 - CSS cores</a></button>            
                 <button><a href="aula16-css cores/index2.html">Aula 16.1 - CSS cores</a></button>
@@ -125,9 +69,7 @@
                 <button><a href="aula23-fundos/fundo6.html">Aula 23.5 - Fundos</a></button>
                 <button><a href="aula23-fundos/fundo7.html">Aula 23.6 - Fundos</a></button>
             </article>
-            <button><a href="aula24-cordel/index.html">Aula 24 - Site cordel</a></button><br>
-        </section>
-        <section class="coluna">           
+            <button><a href="aula24-cordel/index.html">Aula 24 - Site cordel</a></button><br>              
             <article>
                 <button><a href="aula25-tabelas/index.html">Aula 25 - Tabelas</a></button>
                 <button><a href="aula25-tabelas/tabela2.html">Aula 25.1 - Tabelas</a></button>
@@ -158,8 +100,6 @@
                 <button><a href="aula29-media queries/mq003/index.html">Aula 29.2 - Media Queries</a></button>
                 <button><a href="aula29-media queries/mq004/index.html">Aula 29.3 - Media Queries</a></button>
                 <button><a href="aula29-media queries/mq005/index.html">Aula 29.4 - Media Queries</a></button>           
-        </section>
-        <section class="coluna">
             <button><a href="aula30-projeto login/index.html">Aula 31 - Projeto login</a></button>
             <article>
                 <button><a href="aula31-flexbox/index.html">Aula 32 - Flexbox</a></button>
@@ -169,7 +109,7 @@
                 <button><a href="aula31-flexbox/flex5.html">Aula 32.4 - Flexbox</a></button>
                 <button><a href="aula31-flexbox/flex6.html">Aula 32.5 - Flexbox</a></button>
             </article>
-        </section>
+        </section>        
     </main>
     <footer>
         <p>Todos os direitos reservados por <strong><a href="https://github.com/brendahidalgos">Brenda Hidalgo</a></strong>.</p>
