@@ -64,7 +64,7 @@ nav > a{
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s;/* Duração da transição */
 }
 nav > a:hover{
     background-color: var(--cor3);
@@ -99,7 +99,7 @@ main p{
     margin: 15px 0px 15px 0px;
     text-align: justify;
     text-indent: 30px;/* Indentação do primeiro parágrafo */
-    font-size: 1em;;
+    font-size: 1em;
     line-height: 2em;/* Altura da linha */
 }
 main strong{
@@ -144,7 +144,7 @@ aside{
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
-        box-shadow: 3px 3px 8px rgba(0,0,0,0.192);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.192);
 }
 aside ul{
     list-style-position: inside; /* Posição da lista */
